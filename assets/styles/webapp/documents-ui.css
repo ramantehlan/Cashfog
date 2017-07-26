@@ -1,0 +1,58 @@
+/************************
+make the list custom
+**************************/
+
+.document_body{margin-top:40px;}
+
+
+
+.document_heading img{background-color:#0075A2;
+					  background:linear-gradient(60deg, #0075A2, #00577A);
+}
+
+.list_display_box{
+			width:860px;
+}
+
+
+
+.title_1{width:50px;
+		text-align:left;
+		padding-left:10px;
+		}
+.title_2{width:600px;
+		text-align:left;
+}
+.title_3{width:195px;
+		 border-right:0px;
+}
+
+.list_file_name{text-align:left;
+}
+
+
+/****************************8
+edit table info
+*******************************/
+
+.table_body_item{
+}
+
+
+.table_body_item:hover{background-color:#0075A2;
+						color:white;
+}
+
+
+.table_head{
+			color:#0075A2;
+}
+
+.table_body_empty{
+					font-family:text-thin;
+					font-weight:bold;
+}
+
+.table_body{
+	}
+

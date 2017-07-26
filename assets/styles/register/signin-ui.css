@@ -1,0 +1,130 @@
+html{
+	background-color:#09456a;
+ background:#52489C;
+  height:100%;
+	color:#44728e;
+}
+
+.hide{display:none;}
+
+
+.logo{width:120px;
+	  height:120px;
+	  margin:0px auto;
+	  margin-top:30px;
+}
+
+.logo img{width:120px;
+		  height:120px;
+		  outline:none;
+}
+
+.content_box{width:400px;
+			margin:0px auto;
+			margin-top:30px;
+
+}
+
+.signin_box{
+			padding:20px;
+			padding-top:10px;
+			border-radius:3px;
+			background-color:white;
+			box-shadow:0px 0px 5px 1px #073B5B;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.after_signin_box{text-align:center;
+				margin-top:25px;
+				font-family:heading-minor;
+				color:#D6D6D6;
+				font-size:15px;
+				text-shadow:1px 1px 1px #073B5B;
+}
+
+.after_signin_box a{color:#D6D6D6;
+					text-decoration:none;
+}
+
+.after_signin_box a:hover{color:#ffffff;
+}
+
+.create_account{margin-top:15px;}
+
+
+
+.input{ width:350px;
+       height:50px;
+       line-height:50px;
+       margin-top:10px;
+       border-radius:0px;
+       padding-left:5px;
+       padding-right:5px;
+       color:#735C6D;
+       border:0px;
+       border-bottom:1px solid #BECBD3;
+       font-size:16px;
+       font-family:heading-regular;
+       outline:none;
+}
+
+.input:hover{border-bottom-color: #99A4AA;
+			background-color:#F9F9F9;
+}
+
+.input:focus{border-bottom-color: #858E93;
+			background-color:#F9F9F9;			
+ 			color:black;}
+
+.permission_box{height:30px;
+                line-height:30px;
+                margin-top:20px;
+                font-size:15px;
+}
+
+.permission_box input{float:left;
+                      width:15px;
+                      height:15px;
+                      margin-top:7.5px;
+                      margin-right:5px;
+}
+
+.submit_button{ width:362px;
+                margin-top:20px;
+                height:50px;
+                padding-left:30px;
+                padding-right:30px;
+                background-color:#5367D6;
+                border:0px;
+                border-radius:3px;
+                -moz-border-radius:3px;
+                -webkit-border-radius:3px;
+                font-size:16px;
+                font-weight:bold;
+                cursor:pointer;
+                display:inline-block;
+                color:#ffffff;
+                outline:none;
+                transition: all .2s ease;
+                font-family:button;
+}
+
+.submit_button:hover {
+                background-color:#3D4C9E;
+                outline:none;
+}
+
+.submit_button:active {
+  position:relative;
+  top:1px;
+}
+
+.error_box{
+       text-align:center;
+       min-height:30px;
+       font-size:13px;
+       line-height:30px;
+       color:#A33232;
+       display:none;
+       margin-bottom:-5px;
+}

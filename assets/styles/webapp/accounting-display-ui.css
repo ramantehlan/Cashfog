@@ -1,0 +1,134 @@
+/*************************************************************
+account display
+*************************************************************/
+
+
+
+.bookkeeping_display{
+			   margin-top:00px;
+}
+
+.display_title{
+font-size:18px;
+        font-family:text-thin;
+        font-weight:bold;
+        height:30px;
+        line-height:30px;
+        text-align:left; 
+        float:left;
+        padding-left:20px;
+        padding-right:20px;
+        color:#583854;
+        margin-top:3px;
+        margin-bottom:10px;
+        margin-left:-10px;
+        text-decoration:none;
+        opacity:0.6;
+        }
+
+
+.title_a{text-decoration:none;
+		color:#1B8196;
+}
+
+
+ .display_title:hover{background-color:#EEE5E9;
+								  border-radius:30px;
+								  cursor:pointer;
+								}
+
+.display_title:hover > .title_a{text-decoration:none;}
+
+
+.display_title img{
+					 margin:0px;
+					 margin-bottom:-2px;
+					 margin-right:10px;
+}
+
+/*****************************
+customize the table
+******************************/
+
+.ledgers_container{width:840px;
+}
+
+
+
+.title_1{width:40px;
+		text-align:left;
+		padding-left:10px;
+}
+.title_2{width:150px;
+	text-align:left;
+	padding-left:10px;
+}
+
+.title_3 , .title_4 , .title_5 , .title_6 , .title_7{
+		width:155px;
+		text-align:right;
+	}
+
+.title_7{
+		border:0px;
+}
+
+.wide_title{width:207px;}
+.wide_title_2{width:309px;}
+
+.name_title{text-align:left;
+			font-family:text-title;
+			font-size:14px;
+}
+
+.amount_title{text-align:right;
+			  font-family:text-title;
+			  font-size:14px;
+}
+
+
+
+
+
+/****************************8
+edit table info
+*******************************/
+
+.table_body_item{
+}
+
+
+.table_body_item:hover{background-color:#942cae;
+					 background:linear-gradient(60deg, #942cae, #722187);
+						color:white;
+						border-radius:3px;
+}
+
+
+.table_head{
+			color:#53599A;
+			background:white;
+			font-size:16px;
+			width:840px;
+}
+
+.table_body_empty{
+					font-family:text-thin;
+					font-weight:bold;
+}
+
+.table_body{
+	}
+
+
+.auto_block{text-align:center;
+			 color:#a18587;
+			 font-size:18px;
+			 font-family:text-thin;
+			 font-weight:bold;
+			 height:40px;
+			 line-height:40px;
+			 opacity:0.8;}
+
+.auto_item:hover{background:white;
+				 color:#754C4E;}

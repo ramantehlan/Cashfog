@@ -1,0 +1,372 @@
+html{background:#ffffff;}
+
+.box_body{box-shadow:none;}
+
+.body_frame{width:1000px;
+			margin-bottom:20px;
+			margin-top:20px;
+			padding:0px;
+			padding-top:20px;
+			padding-bottom:20px;
+}
+
+.account_box{width:1000px;
+			margin:0px auto;
+			margin-top:30px;
+	}
+
+
+.table_head{
+			color:#747D7E;
+			background-color:white;
+}
+
+.table_body{}
+
+.table_body_item:hover{background-color:#FFAD69;
+						color:white;
+}
+
+
+.title_1{width:60px;}
+.title_2{width:120px;
+		text-align:left;
+}
+.title_3{width:280px;
+		text-align:left;
+		margin-left:20px;
+}
+.title_4{width:200px;
+		text-align:right;
+}
+.title_5{width:200px;
+		 text-align:right;
+}
+.title_6{width:110px;
+		border-right:0px;
+		margin-left:10px;
+}
+
+.name_title{text-align:left;
+			font-family:text-medium;
+}
+
+.amount_title{text-align:right;}
+
+.bold_title{font-family:text-medium;
+}
+
+.minor_title{font-size:13px;}
+
+.middle_title{font-family:text-medium;}
+
+.account_details{
+				width:1000px;
+ 				margin:0px auto;
+			}
+
+.account_details_title{text-align:center;
+						height:30px;
+						line-height:30px;
+						font-size:18px;
+						font-family:text-thin;
+        				font-weight:bold;
+						border-radius:3px;
+						position:absolute;
+						width: 1000px;
+	}
+
+
+.account_details_title_back{float:left;
+						 max-width:200px;
+						 padding-left:20px;
+						 padding-right:20px;
+						 height:30px;
+						 line-height:30px;
+						 border-radius:50px;
+        				color:#1B8196;
+  }
+
+.account_details_title_back:hover{background-color:#EEE5E9;
+}
+
+.account_details_title_back img{
+								margin-left:0px;
+								margin-right:5px;
+								margin-bottom:-3px;
+								outline:0px;
+
+}
+
+.back_a{text-decoration:none;
+		color:#754C4E;
+}
+
+.account_details_title_options{float:right;
+							width:200px;
+}
+
+.account_details_title_options_box{float:right;
+								   width:30px;
+								   height:30px;
+								   margin-right:10px;
+								   border-radius:50px;
+								   cursor:pointer;
+								   opacity:0.6;
+								   border:1px solid transparent;
+}
+
+
+.account_details_title_options_box img{margin:0px auto;
+									   margin-top:6px;
+}
+
+.account_details_title_options_box:hover {background-color:#f3f3f3;
+										border:1px solid #dbdbdb;
+										opacity:1;
+}
+
+.first_option_box{margin-right:0px;}	
+
+.first_option_box img{margin-top:7px;}
+
+
+
+.account_details_company{
+					text-align:center;
+					min-height:30px;
+					margin:0px auto;
+					width:600px;
+					line-height:30px;
+					font-family:text-medium;
+					font-size:22px;
+}
+
+.account_details_company img{margin:0px auto;
+							 margin-left:7px;
+							 margin-bottom:-3px;
+							 outline:0px;
+							 margin-right:3px;
+}
+
+.account_details_box{
+	width:1000px;
+	margin:0px auto;
+}
+
+
+.details_box_body{
+	padding:20px;
+	border-top:0px;
+	border-radius:3px;
+	margin-top:10px;
+}
+
+
+.account_details_box_list{
+						  min-height:30px;
+						  line-height:30px;
+						  margin-top:10px;
+}
+
+.account_details_box_list_title{width:150px;
+								text-align:left;
+								float:left;
+								padding-left:5px;
+								padding-right:5px;
+								font-family:text-medium;
+								margin-left:10px;
+								font-size:14px;
+								border-radius:3px;
+}
+
+.account_details_box_list_title_icon{float:left;
+									 height:30px;
+									 width:30px;
+									 margin-right:10px;
+									 border-radius:50px;
+
+						 background-color:white;
+						 background-color:rgba(255,255,255,0.8);
+}
+
+.account_details_box_list_title_icon img{
+										 margin-left:7px;
+										 margin-top:6px;
+										 width:16px;
+										 height:16px;
+}
+
+.account_details_box_list_body{
+								margin-left:200px;
+								text-align:left;
+								padding-left:10px;
+								padding-right:10px;
+								font-size:14px;
+}
+
+.end_of_month{text-align:center;
+			 color:#a18587;
+			 font-size:18px;
+			 font-family:text-thin;
+			 font-weight:bold;
+			 height:40px;
+			 line-height:40px;
+			 opacity:0.8;}
+
+.end_of_list{text-align:center;
+			 margin-top:20px;
+			 color:#a18587;
+			 font-size:18px;
+			 font-family:text-thin;
+			 font-weight:bold;
+			 height:40px;
+			 line-height:40px;
+			 opacity:0.8;
+}
+
+.error_404_heading{
+			font-size:34px;
+			text-align:center;
+			font-family:text-message;
+		}
+
+.error_404_sub{font-size:18px;
+				text-align:center;
+				font-family:text-input;
+				margin-top:15px;
+}
+
+.error_404_box{
+			width:500px;
+			line-height:20px;
+			padding:20px;
+			padding-left:30px;
+			padding-right:30px;
+			margin:0px auto;
+			background-color:#726E97;
+			color:#ffffff;
+			border-radius:3px;
+			margin-top:40px;
+}
+
+.error_404_box a{color:#d2d2f2;
+				text-decoration:none;
+	}
+
+.error_404_last_line{font-weight:bold;}
+
+
+/*********************************
+edit account info
+**************************************/
+.input{
+                 background-color:#ffffff;
+                 background-color:rgba(255,255,255,0.8);
+	   			 border:1px solid #BECBD3;
+	   			 border-radius:3px;
+}
+
+.input:focus{
+            outline:none;
+            background-color:#fffff2;
+}
+
+.select_box{width:350px;
+			margin:0px auto;
+			height:50px;
+			line-height:50px;
+}
+
+.select_box_title{float:left;
+				  width:150px;
+}
+
+.select_box_body{}
+
+.select_box_body select{width:200px;}
+
+#salutation{width:140px;}
+
+#f_name , #l_name  {width:220px;}
+
+.primary_name{margin-left:15px;}
+
+.currency_box{margin-top:60px;}
+
+#currency{width:160px;}
+
+#balance , #due_date{width:150px;
+					text-align:right;
+}
+
+#due_date{margin-right:10px;}
+
+
+
+.phone_number_field input{width:160px;
+						  margin-left:16px;
+}
+
+#work_phone{margin-left:0px;}
+
+
+.location_field input{margin-top:10px;
+					  width:280px;
+					 margin-left:28px;
+}
+
+.location_box{height:150px;
+			 margin-top:60px;
+}	
+
+#address{width: 600px;
+		 margin-top:0px;
+		 margin-left:0px;
+}
+
+
+#street , #state{
+	margin-left:0px;}
+
+#country{width:292px;}
+
+.country_box{margin-bottom:60px;}
+
+.comment_box{height:120px;
+			margin-top:60px;
+}
+
+.comment_box textarea {height:120px;
+						width:500px;
+						line-height:20px;
+						border:1px solid #BECBD3;
+						border-radius:3px;
+}
+
+.date_details{width:340px;}
+
+/****************************************
+for transaction pop up
+******************************************/
+
+ .pop_hidden_part{display:none;}
+
+ .pop_show_button{	width:150px;
+ 					height:25px;
+ 					line-height:25px;
+ 					font-size:13px;
+ 					text-align:center;
+ 					
+ 					margin-top:20px;	
+ 					border:1px dotted #BECBD3;
+ 					border-radius:3px;
+ 					color:#CCBDBE;
+ }
+
+  .pop_show_button:hover{border:1px solid transparent;
+  						 background-color:#BECBD3;
+  						 color:white;
+  						 cursor:pointer;
+  }
+

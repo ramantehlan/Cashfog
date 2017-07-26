@@ -1,0 +1,25 @@
+/*************************************************************
+this file edit the other chosen.css file to make it 
+better for this ui
+
+creator: raman tehlan
+date of creation:- 31/12/2016
+**************************************************************/
+
+
+.chosen-container-single .chosen-single  {   
+				 padding-left:10px;
+                 padding-right:5px;
+                 border:1px solid #c7d8e2;
+                 border-radius:3px;
+                 height:32px;
+                 font-family:text-input;
+                 font-size:14px;
+                 line-height:30px;
+                 background:#ffffff;
+                 background:rgba(255,255,255,0.8);
+                 box-shadow:none;
+                 color:#735C6D;
+             }
+
+.chosen-container-single  {margin-left:5px;margin-right:5px;}

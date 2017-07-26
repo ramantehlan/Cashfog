@@ -1,0 +1,45 @@
+html{ 
+       min-width:1000px;
+       max-width:100%;
+       margin:0px;
+       font-size:15px;
+       font-family:heading-regular;
+       /*background-color:#F9FBF2;*/
+}
+
+body{
+       margin:0px auto;
+       max-width:100%;
+       min-width:1000px;
+}
+
+
+::selection
+{
+           background-color : rgba(0,0,80,0.7);
+           color            : white;
+           text-shadow      : 1px 1px 1px black;
+}
+
+
+@font-face{
+  font-family:heading-regular;
+  src:url("../../../font/Roboto-Regular.ttf");
+}
+
+@font-face{
+  font-family:heading-thin;
+  src:url("../../../font/Roboto-Thin.ttf");
+}
+
+@font-face{
+  font-family:heading-minor;
+  src:url("../../../font/Quicksand-Bold.ttf");
+}
+
+
+@font-face{
+  font-family:button;
+  src:url("../../../font/Asap-Bold.ttf");
+}
+

@@ -1,0 +1,56 @@
+#import_form{width:425px;
+			 margin:0px auto;
+			 padding:20px;
+			 padding-top:10px;
+			 padding-bottom:20px;
+			 border:1px solid #E3CCFF;
+			  border-radius:3px;
+
+}
+
+.import_input{border:0px;
+			  height:28px;
+			  width:300px;
+			  margin-top:10px;
+
+}
+
+.import_submit{	 margin-top:10px;
+				 float:right;
+}
+
+#import_progress_bar{border:0px;
+			 border-radius:3px 3px 0px 0px;
+			 width:467px;
+			 height:25px;
+			 margin-bottom:10px;
+			 background-color:#B5DBFF;
+			 margin-left:-21px;
+			 margin-top:-11px;
+			 display:none;
+	}
+
+
+#import_progress_bar .progress-label{position:absolute;
+							  line-height:25px;
+							  text-align:center;
+							  font-size:12px;
+							  color:white;
+							  width:467px;
+}
+
+ #import_progress_bar .ui-progressbar-value {
+    background-color: #FF9505;
+    border-radius:3px 3px 0px 0px;
+   }
+
+.import_error{width:100%;
+	margin-left:0px;
+	margin-top:10px;
+}
+
+.import_success{width:100%;
+				margin-left:0px;
+				margin-top:10px;
+}
+

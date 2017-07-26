@@ -1,0 +1,136 @@
+.settings_body{
+			   margin-top:90px;
+}
+
+.settings_title img{
+					 background-color:#5c5f40;
+					 background:linear-gradient(60deg, #2D93AD, #216E82);
+}
+
+
+.settings_fields_box{
+     /* border:1px solid #DCEBF4;*/
+     padding-top:10px;
+  }
+
+
+.settings_fields_box_row{
+	height:42px;
+	margin-top:20px;
+}
+
+.highlighted_row{background-color:#FCEDED;
+				 padding:20px;
+				 padding-left:0px;
+				 padding-right:0px;
+				 border-radius:3px;
+}
+
+.highlighted_row input {border:1px solid #BECBD3;
+						border-radius:3px;
+}
+
+.settings_fields_box_row_name{height:42px;
+							  line-height:42px;
+							  width:150px;
+							  text-transform:capitalize;
+							  float:left;
+							  overflow:hidden;
+							  font-size:14px;
+							  text-align:right;
+							  font-family:text-normal;
+							  
+}
+
+.settings_fields_box_row_field{min-height:40px;
+							   line-height:40px;
+							   float:left;
+							   margin-left:50px;
+							}
+
+.settings_fields_box_row_field input{
+									width:338px;
+									height:30px;
+							   
+}
+
+.settings_fields_box_row_field select{
+
+									height:32px;
+							   
+}
+
+.settings_fields_box_row_field textarea{width:238px;
+										height:80px;
+										resize:horizontal;
+}
+
+.logo_row_details{
+	padding-top:5px;
+	color:#CCBDBE;
+	font-size:12px;
+	min-height:20px;
+	line-height:15px;
+}
+
+
+
+#gender{width:250px;}
+.birthday_row{width:250px;}
+
+
+.select_input{
+	width:300px;
+}
+
+
+.error_box{margin-left:200px;
+			margin-top:10px;
+			}
+.success_box{margin-left:200px;
+			margin-top:10px;	
+}
+
+.submit_button{
+	/* equal to row_name  width */
+	margin-left:200px;
+	margin-top:10px;
+	}
+
+
+.settings_mid_box{
+					margin-top:60px;
+}
+
+.settings_mid_heading{
+					font-family:text-normal;
+					 color:#6B6B6B;
+}
+
+
+.settings_mid_body{margin-left:0px;}
+
+
+.subscription_heading{text-align:center;
+					  height:30px;
+					  line-height:30px;
+					  font-size:22px;
+					  font-family:text-normal;
+					  font-weight:bold;
+}
+
+.subscription_body{width:600px;
+				   margin:0px auto;
+				   margin-top:15px;
+				   margin-bottom:30px;
+}
+
+.subscription_button{width:150px;
+					 margin-left:225px;
+					 text-transform: capitalize;
+					 background-color:#c12626;
+					 color:#FFFFFF;
+}
+
+.sub_on{color:blue;}
+.sub_off{color:red;}

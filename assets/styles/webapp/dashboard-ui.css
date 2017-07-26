@@ -1,0 +1,209 @@
+.notification{height:40px;
+			  line-height:40px;
+			  background:#CC2936;
+			 margin-bottom:30px;
+			 border-radius:3px;
+			 padding-left:20px;
+			 padding-right:20px;
+			 color:#f2f2f2;
+}
+
+.box_heading img{
+			padding:20;
+}
+
+
+.group_0{height:140px;
+		margin-top:-10px;
+		 margin-bottom:20px;
+}
+
+.group_1{height:452px;
+		 margin-bottom:20px;
+}
+
+.group_2{
+		 height:430px;
+		 margin-bottom:40px;
+}
+
+
+.box_purchase{
+		width:840px;
+		margin-top:20px;
+		float:left;
+
+}
+
+.box_sales{
+		width:840px;
+		margin-top:20px;
+		float:left;
+}
+
+.box_exin_chart{width:840px;
+		margin-top:00px;
+		margin-bottom:50px;
+		float:left;}
+
+.box_expense , .box_income {width:380px;
+	  margin-left:20px;
+	  margin-top:20px;
+	   float:left;
+}
+
+.box_expense{margin-left:0px;}
+
+
+
+.box_receive , .box_pay {width:380px;
+	  margin-top:20px;
+	  margin-left:20px;
+	  float:left;}
+
+.box_receive{margin-left:0px;}
+
+.canvas_cover{background-color:rgba(0,0,0,0);
+			  background-color:transparent;
+			  width:600px;
+			  height:300px;
+			  position:absolute;
+			  display:none;
+}
+
+#sales_box , #exin_box , #purchase_box{
+	width:650px;
+	border-radius:5px;
+	margin-top:30px;
+	float:left;
+	margin-left:-15px;
+	margin-bottom:-10px;
+}
+
+
+#expense_box , #income_box{position:relative;
+							width:300px;
+							margin:0px auto;
+							margin-top:40px;
+							z-index:1;
+}
+
+.details_of_cashflow{float:left;
+					 margin-top:40px;
+					 margin-left:20px;
+}
+
+.exin_details{margin-top:00px;}
+
+.row_of_details{
+				height:40px;
+				width:170px;
+				margin-top:15px;
+				padding-left:10px;
+				padding-top:10px;
+				border-radius:3px;
+}
+
+.imp_detail{background-color:rgba(230,230,230,0.35);}
+
+.head_of_details{
+				 font-size:12px;
+				 height:10px;
+				 line-height:10px;
+				 color: #BABABA;
+}
+
+.body_of_details{
+				height:30px;
+				line-height:30px;
+				margin-left:10px;
+				font-weight:bold;
+				font-size:14px;
+}
+
+#expense_content{color:#ef6036;}
+#income_content{color:#F038FF;}
+#purchase_content{color:#F4743B;}
+#payment_paid_content{color:#F2C14E;}
+#sales_content{color:#ef6036;}
+#payment_received_content{color:#399CF9;}
+
+
+
+.small_head img{margin-left:-15px;}
+.small_head {font-size:16px;}
+
+.heading_receive img{background:linear-gradient(60deg, #ffa726, #D37400);}
+.heading_pay img{background:linear-gradient(60deg, #ef5350, #C12F2C);}
+
+.heading_sales img{background:linear-gradient(60deg, #6C91C2, #6C28D9);}
+.heading_purchase img{background:linear-gradient(60deg, #A49966, #A4A11C);}
+.heading_income img{background:linear-gradient(60deg, #027BCE, #0161A0);}
+.heading_expense img{background:linear-gradient(60deg, #B4656F, #7C454D);}
+
+
+
+.box_content{text-align:center;
+				padding-top:10px;
+				font-weight:bold;
+				font-size:14px;
+}
+.box_data{text-align:center;
+		 height:40px;
+		 line-height:40px;	
+		 font-weight:bold;
+
+		 /*****
+			remove to change center
+		 ****/
+
+		 position:absolute;
+		 z-index:0;
+		 width:300px;
+		 margin-top:150px;
+		 margin-left:40px;
+		 font-size:14px;
+
+
+}
+
+
+
+
+.canvas_option_box{min-height:50px;
+					line-height:50px;
+					font-size:16px;
+					color:#8C8C8C;
+					text-align:center;
+}
+
+.canvas_option_input{ padding-left:10px;
+                 padding-right:5px;
+                 border-radius:3px;
+                 height:32px;
+                 font-family:text-input;
+                 font-size:14px;
+                 line-height:30px;
+                 box-shadow:none;
+                 margin-left:5px;
+                 margin-right:5px;
+                 cursor:pointer;
+}
+
+.option_box_1{float:left;
+			  height:40px;
+			  line-height:40px;
+			  margin-top:-1.5px;
+			  margin-left:10px;
+			  text-align:left;
+}
+
+.option_box_action{height:20px;
+					line-height:20px;
+					font-size:12px;
+					text-align:center;
+					position:absolute;
+					display:none;
+}
+
+

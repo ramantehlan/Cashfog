@@ -1,0 +1,127 @@
+html{ 
+       min-width:1000px;
+       max-width:100%;
+       margin:0px;
+       font-size:15px;
+       background-attachment:fixed;
+       font-family:passage2; 
+       background-size:100%;
+       color:#666666;
+         background-attachment:fixed;
+       /*background-color:#F9FBF2;*/
+}
+
+body{
+       margin:0px auto;
+       max-width:100%;
+       min-width:1000px;
+}
+
+
+.input{margin:0px auto;
+        width:288px;
+        height:40px;
+        border:1px solid #54F2F2;
+        border-radius:5px;
+        margin-top:10px;
+        padding:5px;
+        font-size:16px;
+        outline-color: #03254E;
+        outline-width:1px;
+}
+
+.permission{margin-top:10px;
+    float:left;
+    height:30px;
+    line-height:30px;
+}
+
+.forgot_something_link{float:right;
+             margin-top:10px;            
+    height:30px;
+    line-height:30px;
+    color: #8D94BA;
+}
+
+.button{width:300px;
+       height:50px;
+        margin-top:10px;
+        font-size:16px;
+        font-family:buttons;
+        border-radius:5px;
+        background-color:#0FACF3;
+        border:1px solid #0FACF3;
+        color: white;
+        cursor:pointer;
+}
+
+.button:hover{background-color: #0B86BF;
+  color:#FECEE9;
+  border:1px solid #0B86BF;
+}
+
+.error_box{
+       text-align:center;
+       min-height:30px;
+       font-size:13px;
+       line-height:30px;
+       background-color:#A33232;
+       color:#FDFFFC;
+       border-radius:5px;
+       display:none;
+}
+
+::selection
+{
+           background-color : rgba(0,0,80,0.7);
+           color            : white;
+           text-shadow      : 1px 1px 1px black;
+}
+
+.heading-Italic{font-style:italic;
+                font-family:passage;
+                font-weight:bold;
+}
+
+a{text-decoration:none;}
+
+
+
+@font-face{
+  font-family:heading;
+  src:url("../../font/Roboto-Medium.ttf");
+}
+
+
+@font-face{
+  font-family:heading-regular;
+  src:url("../../font/Roboto-Regular.ttf");
+}
+
+@font-face{
+  font-family:heading-minor;
+  src:url("../../font/Quicksand-Bold.ttf");
+}
+
+
+
+@font-face{
+  font-family:buttons;
+  src:url("../../font/Asap-Bold.ttf");
+}
+
+@font-face{
+    font-family:passage;
+    src:url("../../font/Roboto-Thin.ttf");
+}
+
+@font-face{
+    font-family:passage2;
+    src:url("../../font/Roboto-Regular.ttf");
+}
+
+@font-face{
+  font-family: passage3;
+  src:url("../../font/Abel-Regular.ttf");
+}
+

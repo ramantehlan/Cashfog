@@ -1,0 +1,221 @@
+.body_frame{padding-top:00px;}
+
+.profile_content_box{
+			   padding:20px;
+			   border-radius:5px;
+			   color:#754C4E;
+			   margin-top:80px;
+}
+
+.left_of_top{float:left;}
+
+.logo_of_company{width:200px;
+			     height:200px;
+			     border-radius:5px;
+			     overflow:hidden;
+			     moz-border-radius:5px;
+			     text-align:center;
+			     line-height:200px;
+			     color:#ac95a0;
+			     font-size:18px;
+				 margin-right:10px;
+				background-color:#2A324B;
+
+
+}
+
+.logo_of_company img{width:200px;
+					height:200px;
+					border-radius:5px;
+}
+
+.qr_code_box{float:left;
+			 width:120px;
+			 height:120px;
+			 background-color:white;
+			 margin-top:15px;
+			 margin-left:40px;
+
+}
+
+
+.profile_edit_form{margin-top:90px;}
+
+.profile_content_box{
+					 width:860px;
+					 border-radius:5px 5px 5px 5px;
+					 padding:20px;
+}
+
+
+
+.profile_content_top{
+					 height:30px;
+					 line-height:30px;
+}
+
+.box_menu{position:absolute;
+		  right:0%;
+		  top:0%;
+		  margin-top:10px;
+		  margin-right:10px;
+		  }
+
+
+
+.company_name{font-size:30px;
+			 font-family:text-title;
+			 text-transform:capitalize;
+			 margin-bottom:15px;
+			 margin-left:225px;
+			 color:#2A324B;		
+			 width:560px;
+}
+
+.profile_details{
+				margin-left:230px;
+				margin-top:25px;
+
+}
+
+.profile_line{min-height:30px;
+			  line-height:30px;
+			  margin-left:6px;
+			  margin-top:10px;
+}
+
+.profile_line_content_title{text-transform:capitalize;
+							float:left;
+							font-size:15px;
+							padding-left:5px;
+							padding-right:5px;
+							width:150px;
+							font-family:text-medium;
+				}
+
+.profile_line_image{
+					float:left;
+					height:30px;
+					width:30px;
+					margin-right:10px;
+					border-radius:50px;
+
+}
+
+.profile_line_image img{
+						margin-left:7px;
+						margin-top:6px;
+						width:16px;
+						height:16px;
+}
+
+
+.profile_line_content{margin-left:160px;
+					  min-height:30px;
+					  line-height:30px;
+					  font-size:14px;
+}
+
+.profile_line_content a{text-decoration:none;}
+
+
+
+/**************************************************
+
+*************************************************/
+
+
+
+.logo_upload_row{height:90px;}
+
+.logo_upload{width:120px;
+			 height:50px;
+			 text-align:center;
+			 border:1px solid #BECBD3;
+			 border-style:dashed;
+			 background-color:#FAFCFB;
+}
+
+.logo_row_details{
+	padding-top:5px;
+	color:#CCBDBE;
+	font-size:12px;
+}
+
+
+.form_box_row{min-height:40px;
+			  float:left;
+							}
+
+
+.form_box_row input{
+									width:338px;
+							   
+}
+
+
+
+#address{width: 580px;
+		 margin-top:0px;
+		 margin-left:0px;
+}
+
+#street , #state{margin-left:0px;}
+
+.address_row{margin-top:60px;
+			 margin-bottom:30px; 
+			 height:150px;
+}
+
+.address_fields{width:600px;
+	}
+
+.address_fields input{margin-top:10px;
+						width:270px;
+						float:left;
+						margin-left:30px;
+}
+
+.select_input{
+	width:300px;
+}
+
+.error_box{margin-left:200px;
+			margin-top:10px;
+			}
+.success_box{margin-left:200px;
+			margin-top:10px;	
+}
+
+.submit_button{
+	/* equal to row_name  width */
+	margin-left:200px;
+	margin-top:30px;
+	}
+
+
+.removing_logo_box{padding:20px;
+					padding-top:10px;
+					padding-bottom:10px;
+					border:1px solid #e6e9ec;
+				   height:50px;
+				   line-height:50px;
+				   float:right;
+				   margin-top:0px;
+				   border-radius:3px;
+				   font-size:16px;
+				   color:#9facbd;
+				   cursor:pointer;
+}
+
+.removing_logo_box:hover{background-color:#e6e9ec;
+						 border-color:#C5C8CC;
+						 color: #939FAF;
+}
+
+.removing_logo_box img{float:left;
+						border-radius:3px;
+						margin-right:15px;
+						width:50px;
+						margin-top:0px;
+		}

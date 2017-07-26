@@ -1,0 +1,191 @@
+/***********************
+intro box
+**************************/
+
+
+.index_intro{margin-top:90px;
+}
+
+.index_intro_heading{margin-bottom:20px;}
+
+.index_intro_heading img{
+					 background-color:#942cae;
+					 background:linear-gradient(60deg, #942cae, #722187);
+}
+
+.index_intro_passage{
+							padding-top:1px;
+}
+
+
+
+
+
+
+
+/*****************************************************
+for recording the transition
+******************************************************/
+
+#account_id{width:412px;}
+
+#particulars{width:400px;}
+
+#bill_no { width:171px;}
+
+
+.transaction_amount_box{margin-top:60px;}
+
+ #transaction_amount{text-align:right;
+ 				  margin-left:10px;
+ 				  width:150px;
+ }
+
+#transaction_method{width:250px;}
+
+#transaction_type{width:262px;}
+
+.comment_box{height:120px;
+			margin-top:60px;
+}
+
+.comment_box textarea {height:120px;
+						width:500px;
+						line-height:20px;
+						border:1px solid #BECBD3;
+}
+
+
+/*****************************************8
+to create new account
+**************************************/
+
+.select_box{width:350px;
+			margin:0px auto;
+			height:50px;
+			line-height:44px;
+}
+
+.select_box_title{float:left;
+				  width:150px;
+}
+
+.select_box_body{}
+
+.select_box_body select{width:200px;}
+
+#salutation{width:140px;}
+
+#f_name , #l_name  {width:220px;}
+
+.primary_name{margin-left:15px;}
+
+.currency_box{margin-top:60px;}
+
+#currency{width:160px;}
+
+#balance , #due_date{width:150px;
+					text-align:right;
+}
+
+#due_date{margin-right:10px;}
+
+
+
+.phone_number_field input{width:160px;
+						  margin-left:16px;
+}
+
+#work_phone{margin-left:0px;}
+
+
+.location_field input{margin-top:10px;
+					  width:280px;
+					 margin-left:28px;
+}
+
+.location_box{height:160px;
+			 margin-top:60px;
+}	
+
+#address{width: 600px;
+		 margin-top:0px;
+		 margin-left:0px;
+}
+
+
+#street , #state{
+	margin-left:0px;}
+
+#country{width:292px;}
+
+.country_box{margin-bottom:60px;}
+
+
+
+/*******************************
+index table where date of user is define
+********************************/
+
+
+/*
+update
+*/
+
+.coloumn_holder{height:300px;
+				width:100%;
+				margin-top:10px;
+}
+
+.coloumn{width:180px;
+		height:280px;
+		 float:left;
+		 padding:10px;
+		 cursor:pointer;
+		 color:#754c53;
+}
+
+.coloumn:hover{background-color:#942cae;
+			   background:linear-gradient(60deg, #942cae, #722187); 
+			   color:white;
+			   border-color:transparent;
+			   border-radius:5px;
+			}
+
+.coloumn_heading{text-align:center;
+				line-height:30px;
+				height:30px;
+				margin-bottom:20px;
+				font-size:16px;
+				font-family:text-medium;
+				text-align:left;
+				margin-left:15px;
+}
+
+
+.coloumn_row{
+			 line-height:40px;
+			 height:40px;
+			/* padding:10px;
+			 padding-bottom:0px;*/
+			 border-radius:3px;
+			 margin-top:20px;
+			 margin-left:15px;
+}
+
+.coloumn_row_head{font-size:12px;
+				 height:10px;
+				 line-height:10px;
+				 color: #BABABA;
+				}
+
+.coloumn_row_body{height:30px;
+				line-height:30px;
+				margin-left:10px;
+				font-size:14px;
+				font-family:text-medium;
+			}
+
+.no_border{}
+.first_coloumn{margin-left:20px;
+}

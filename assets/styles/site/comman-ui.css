@@ -1,0 +1,113 @@
+html{background-color:#C6E8F2;}
+
+.body_frame{background-color:white;
+            width:1000px;
+            margin:0px auto;
+            margin-top:-330px;
+            margin-bottom:50px;
+            box-shadow:0 1px 5px 0 rgba(0,0,0,.15);
+            padding-bottom:20px;
+}
+
+.top{
+	position:static;
+}
+
+.top_intro{width:1000px;
+			margin:0px auto;
+              padding-top:70px;
+              padding-bottom:70px;
+}
+
+.top_intro_heading{text-align:center;
+                      font-size:32px;
+                      font-family:heading-regular;
+                      color: #212121;
+                  }
+
+.top_intro_passage{
+           width:900px;
+           margin:0px auto;
+           margin-top:20px;
+           font-size:16px;
+           font-family:passage2;
+           color:#282828;
+           line-height:22px;}
+
+.row{
+           width:750px;
+           height:200px;
+           margin:0px auto;
+           font-size:16px;
+           /*background-color:blue;*/
+           padding:25px;
+           margin-bottom:70px;
+}
+
+.ending_row{width:900px;
+			margin:0px auto;
+              padding-bottom:70px;
+             font-size:16px;
+           font-family:passage2;
+           line-height:22px;
+           color:#282828;
+			}
+
+.ending_heading{text-align:left;
+                      font-size:22px;
+                      font-family:heading-regular;
+                      color: #212121;
+
+                    }
+
+.row_image{width:200px;
+			height:200px;
+			overflow:hidden;
+      text-align:center;
+}
+
+.row_image img{margin:0px auto;}
+
+.row_image_icon{margin-left:36px;
+				margin-top:10px;
+				width:128px;
+				height:128px;
+}
+
+.row_even_image{float:left;}
+.row_odd_image{float:right;}
+
+.row_passage{height:200px;
+}
+
+.row_even_passage{
+					margin-left:230px;
+}
+
+.row_odd_passage{
+					margin-right:230px;
+}
+
+.row_passage_heading{
+                      font-size:22px;
+                      font-family:heading;
+                      color: #161616;}
+
+.row_passage_heading_light{font-size:20px;
+							color:#B3B3B3;
+}
+
+.row_passage_content{
+           margin-top:15px;
+           font-size:16px;
+           font-family:passage2;
+           color:#3A3A3A;
+           line-height:22px;}
+
+
+h4 {
+   font-family:heading-regular;
+   font-size:18px;
+}
+
+p{margin-left:20px;}

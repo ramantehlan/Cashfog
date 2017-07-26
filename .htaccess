@@ -1,0 +1,128 @@
+#remove # from rewritebase when uploading to server
+RewriteBase /
+
+
+ErrorDocument 403 /error/403
+ErrorDocument 404 /error/404
+ErrorDocument 414 /error/414
+
+ErrorDocument 500 /error/500
+ErrorDocument 503 /error/503
+ErrorDocument 507 /error/507
+ErrorDocument 508 /error/508
+
+#error 521 is not supported on localhost
+#ErrorDocument 521 /error/521
+
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^cashfog.com [NC]
+RewriteRule ^(.*)$ http://www.cashfog.com/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^104.27.172.20
+RewriteRule (.*) http://www.cashfog.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^faithful-field.000webhostapp.com
+RewriteRule (.*) http://www.cashfog.com/$1 [R=301,L]
+
+  RewriteRule ^site/([a-zA-Z-.&_]+) minor/site/index.php?page=$1 [NC,L] 
+
+  RewriteRule ^error/([0-9]+) minor/errors/index.php?error_code=$1 [NC,L]
+
+  RewriteRule ^demo register/demo.php [NC,L]
+
+  RewriteRule ^style/in/([0-9a-zA-Z-._]+) assets/styles/index/$1 [NC,L] 
+  RewriteRule ^style/si/([0-9a-zA-Z-._]+) assets/styles/site/$1 [NC,L] 
+  RewriteRule ^style/re/([0-9a-zA-Z-._]+) assets/styles/register/$1 [NC,L] 
+  RewriteRule ^style/app/([0-9a-zA-Z-._]+) assets/styles/webapp/$1 [NC,L] 
+  RewriteRule ^style/er/([0-9a-zA-Z-._]+) assets/styles/errors/$1 [NC,L] 
+  RewriteRule ^style/([0-9a-zA-Z-._]+) assets/styles/$1 [NC,L] 
+
+  RewriteRule ^script/in/([0-9a-zA-Z-._]+) assets/scripts/index/$1 [NC,L]
+  RewriteRule ^script/si/([0-9a-zA-Z-._]+) assets/scripts/site/$1 [NC,L]
+  RewriteRule ^script/re/([0-9a-zA-Z-._]+) assets/scripts/register/$1 [NC,L]
+  RewriteRule ^script/app/([0-9a-zA-Z-._]+) assets/scripts/webapp/$1 [NC,L]
+  RewriteRule ^script/([0-9a-zA-Z-._]+) assets/scripts/$1 [NC,L] 
+
+  RewriteRule ^image/bg/([0-9a-zA-Z-._()]+) assets/images/backgrounds/$1 [NC,L] 
+  RewriteRule ^image/ic/([0-9a-zA-Z-._()]+) assets/images/icons/$1 [NC,L] 
+  RewriteRule ^image/ot/([0-9a-zA-Z-._()]+) assets/images/other/$1 [NC,L] 
+  RewriteRule ^image/lo/([0-9a-zA-Z-._()/]+) webapp/images/logo/$1 [NC,L]
+  RewriteRule ^image/([0-9a-zA-Z-._()]+) assets/images/$1 [NC,L]
+
+  RewriteRule ^action/re/([0-9a-zA-Z-._]+) includes/actions/register/$1 [NC,L] 
+  RewriteRule ^action/si/([0-9a-zA-Z-._]+) includes/actions/site/$1 [NC,L] 
+  RewriteRule ^action/app/([0-9a-zA-Z-._]+) includes/actions/webapp/$1 [NC,L] 
+  RewriteRule ^action/([0-9a-zA-Z-._]+) assets/php/site/$1 [NC,L] 
+
+  RewriteRule ^font/app/([0-9a-zA-Z-._]+) assets/fonts/app/$1 [NC,L] 
+  RewriteRule ^font/([0-9a-zA-Z-._]+) assets/fonts/$1 [NC,L] 
+
+  RewriteRule ^signin/error/([0-9a-zA-Z-._]+) register/signin.php?error=$1 [NC,L]
+  RewriteRule ^signin register/signin.php [NC,L]
+
+
+  RewriteRule ^signup/error/([0-9a-zA-Z-._]+) register/signup.php?error=$1 [NC,L]
+  RewriteRule ^signup/add register/add.php [NC,L]
+  RewriteRule ^signup register/signup.php [NC,L]
+
+  RewriteRule ^security/reset_password register/security/reset_password.php [NC,L]
+  RewriteRule ^security/forgot_password register/security/forgot_password.php [NC,L]
+  RewriteRule ^security/verification register/security/verification.php [NC,L]
+  
+
+  RewriteRule ^profile/([0-9a-zA-Z]+) webapp/profile.php?user_id=$1 [NC,L]
+  RewriteRule ^profile/ webapp/profile.php [NC,L]
+
+  RewriteRule ^app/intro webapp/intro.php [NC,L]
+  RewriteRule ^app/forgot_password register/forgot_password.php [NC,L]
+  RewriteRule ^app/signin-check webapp/signin-check.php [NC,L]
+  RewriteRule ^app/dashboard webapp/dashboard.php [NC,L]
+  RewriteRule ^app/analysis webapp/analysis.php [NC,L]
+  RewriteRule ^app/account/([0-9a-zA-Z-._]+)/([0-9]+) webapp/account.php?account_id=$1&page=$2 [NC,L]
+  RewriteRule ^app/account/([0-9a-zA-Z-._]+) webapp/account.php?account_id=$1 [NC,L]
+  RewriteRule ^app/transactions/([0-9a-zA-Z-._]+) webapp/accounting.php?page=$1 [NC,L]
+  RewriteRule ^app/transactions webapp/accounting.php [NC,L]
+  RewriteRule ^app/documents webapp/documents.php [NC,L]
+  RewriteRule ^app/trash webapp/trash.php [NC,L]
+
+  RewriteRule ^app/settings/([0-9a-zA-Z-._]+) webapp/settings.php?page=$1 [NC,L]
+  RewriteRule ^app/settings webapp/settings.php [NC,L]
+  RewriteRule ^app/logout webapp/logout.php [NC,L]
+
+  #RewriteRule ^app webapp/dashboard.php [NC,L]
+  
+
+
+
+ 
+
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+ 
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>
+
+
+#<ifModule mod_headers.c>
+#ExpiresActive On
+
+# Expires after 2 Weeks
+#<filesMatch ".(gif|png|jpg|jpeg|txt)$">
+#Header set Cache-Control "max-age=1209600"
+#</filesMatch>
+
+# Expires after 1 day
+#<filesMatch ".(css|js)$">
+#Header set Cache-Control "max-age=86400"
+#</filesMatch>
+#</ifModule>
+

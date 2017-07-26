@@ -1,0 +1,15 @@
+User-agent: *
+
+Disallow: /assets
+Disallow: /includes
+Disallow: /minor/errors
+Disallow: /minor/cron
+Disallow: /register/add.php
+Disallow: /register/security
+Disallow: /webapp
+Disallow: /.htaccess
+
+Sitemap: http://www.cashfog.com/sitemap.xml
+
+
+

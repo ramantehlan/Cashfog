@@ -1,0 +1,92 @@
+.activity_box{margin-top:90px;}
+
+.option_box{height:50px;
+					line-height:50px;
+					font-size:16px;
+					color:#8C8C8C;
+					float:left;
+				    height:40px;
+			        line-height:40px;
+			  		margin-top:-1.5px;
+			  		margin-left:10px;
+			  		text-align:left;
+}
+
+.option_input{ padding-left:10px;
+                 padding-right:5px;
+                 border:1px solid #c7d8e2;
+                 border-radius:3px;
+                 height:32px;
+                 font-family:text-input;
+                 font-size:14px;
+                 line-height:30px;
+                 background:#ffffff;
+                 background:rgba(255,255,255,0.8);
+                 box-shadow:none;
+                 color:#735C6D;
+                 margin-left:5px;
+                 margin-right:5px;
+                 cursor:pointer;
+}
+
+.option_box_action{height:20px;
+					line-height:20px;
+					font-size:12px;
+					text-align:center;
+					position:absolute;
+					display:none;
+}
+
+
+.box_heading img{
+			padding:20;
+}
+
+.box_4{width:260px;}
+
+.group_1{height:420px;
+}
+
+.box_1{
+		width:530px;
+		margin-top:20px;
+		float:left;
+
+}
+
+.box_2{width:225px;
+	  margin-top:55px;
+	  margin-left:20px;
+	  float:left;
+}
+
+.box_2_heading img{background-color:#E59500;}
+.box_3_heading img{background-color:#77260A;}
+.box_4_heading img{background-color:#043565;}
+
+.box_2_content{text-align:center;
+				padding-top:10px;
+				font-weight:bold;
+}
+
+.first{float:left;}
+
+.second{margin-left:500px;}
+
+#cashflow{
+	width:300px;
+	margin-top:10px;
+}
+
+.canvas_option_box{height:50px;
+					line-height:50px;
+					font-size:16px;
+					font-family:text-thin;
+					color:#ADADAD;
+					font-weight:bold;
+}
+
+.canvas_option_input{color:#7d6767; 
+					 font-size:16px;
+					 font-family:text-normal;
+}

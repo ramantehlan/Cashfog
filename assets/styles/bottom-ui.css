@@ -1,0 +1,63 @@
+.bottom_body{width:100%;
+			 margin:0px auto;
+			 background-color:#3B413C;
+			 color:#8F9BAD;
+			 padding-top:10px;
+			 padding-bottom:70px;
+}
+
+
+
+.support_line{margin:0px auto;
+	text-align:center;
+	margin-top:20px;
+}
+
+.support_line_options{
+					  margin-left:23px;
+					  color:#ebe3f5;
+					  line-height:30px;
+}
+
+.support_line_options:hover{
+					  color:#ffffff;
+}
+
+.social_media_box{
+		width:240px;
+		height:50px;
+}
+
+.social_media_icon{width:40px;
+				   height:40px;
+				   float:left;
+				   margin-top:5px;
+				   margin-left:30px;
+				   background-color:#ebe3f5;
+				   border-radius:40px;
+				   cursor:pointer;
+				   opacity:0.8;
+}
+
+.social_media_icon:hover{background-color:white;opacity:1;}
+
+.social_media_icon img{margin-top:10px;
+						margin-left:0px;
+						width:20px;
+						height:20px;
+						outline:none;
+}
+
+.linkedin_logo img{margin-top:8px;}
+
+.copyright_line{font-size:13px;
+				color: #ebe3f5;
+				line-height:30px;
+}
+
+.end_logo{margin-top:40px;
+}
+
+.end_logo img{width:160px;
+			  opacity:0.8;
+}

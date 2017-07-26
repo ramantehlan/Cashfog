@@ -1,0 +1,89 @@
+/******************************************
+for the form submitions
+******************************************/
+
+.form_box{padding-top:1px;}
+
+.form_body{
+			   margin-top:9px;
+}
+
+.form_box_heading img{
+					 background-color:#273B09;
+}
+
+.form_box_row{
+	min-height:32px;
+	margin-top:15px;
+	width:100%;
+}
+
+.form_mid_box{
+					margin-top:25px;
+}
+.form_mid_heading{
+					font-family:text-thin;
+					font-weight:bold;
+}
+
+
+.form_mid_body{margin-left:0px;}
+
+.close_all_button{float:right;
+								   width:30px;
+								   height:30px;
+								   background-color:white;
+						           background-color:rgba(255,255,255,0.8);
+								   border-radius:50px;
+								   cursor:pointer;
+								   margin-top:10px;
+								   margin-right:10px;
+
+}
+
+.close_all_button img{
+					 margin-top:7px;
+					 margin-left:7px;
+}
+
+
+.form_box_row_title{height:42px;
+							  line-height:42px;
+							  width:150px;
+							  text-transform:capitalize;
+							  float:left;
+							  overflow:hidden;
+							  font-size:14px;
+							  text-align:right;
+							  font-family:text-normal;
+							}
+
+.form_box_row_field{			min-height:42px;
+							   line-height:40px;
+							   margin-left:200px;
+							}
+
+.form_box_row_field input{width:350px;
+						  height:30px;
+}
+
+.form_box_row_field select{width:200px;
+							height:34px;
+}
+
+.field_row_details{
+	padding-top:5px;
+	color:#CCBDBE;
+	font-size:12px;
+	line-height:20px;
+}
+
+
+.form_button{margin-left:200px;
+			   margin-top:30px;
+}
+
+
+.error_box , .success_box{margin-left:200px;}
+
+
