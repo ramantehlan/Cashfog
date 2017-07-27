@@ -1,3 +1,5 @@
+![LOGO](https://ramantehlan.github.io/Cashfog/assets/images/other/cashfog_logo_dark.png)
+
 # Cashfog
 *Cashfog is smarter and easier way to maintain business transactions.*
 
@@ -23,5 +25,11 @@ Analyses can be done right after creation of all the required accounts and recod
 
 You can now take decisions which are not just on your instincts but are data driven so you can now grow faster and accurately.
 
+
+# Screen shots
+
+![capture](https://ramantehlan.github.io/Cashfog/assets/images/Capture.JPG)
+![capture](https://ramantehlan.github.io/Cashfog/assets/images/Capture2.JPG)
+![capture](https://ramantehlan.github.io/Cashfog/assets/images/Capture3.JPG)
 
 
