@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://ramantehlan.github.io/Cashfog/assets/images/other/plan_logo_3.png" width="150">
+</p>
+
 # Cashfog
 *Cashfog is smarter and easier way to maintain business transactions.*
 
@@ -23,11 +27,34 @@ Analyses can be done right after creation of all the required accounts and recod
 
 You can now take decisions which are not just on your instincts but are data driven so you can now grow faster and accurately.
 
+# Requirement
+
+  empty
+
+# Installation
+
+  empty
+
+# Contribution
+
+Feel free to add your own features or improve any current feature, any kind of help is appreciated!
+
+# License
+
+GNU General Public License v3.0
+
+# Back Story
+
+#### You probably don't want to read it
+
+#### What's in it for you
 
 # Screenshots
 
-![capture](https://ramantehlan.github.io/Cashfog/assets/images/Capture.JPG)
-![capture](https://ramantehlan.github.io/Cashfog/assets/images/Capture2.JPG)
-![capture](https://ramantehlan.github.io/Cashfog/assets/images/Capture3.JPG)
+<p>
 
+<img src="https://ramantehlan.github.io/Cashfog/assets/images/Capture.JPG" width="430">
+<img src="https://ramantehlan.github.io/Cashfog/assets/images/Capture2.JPG" width="430">
+<img src="https://ramantehlan.github.io/Cashfog/assets/images/Capture3.JPG" width="430">
+</p>
 
