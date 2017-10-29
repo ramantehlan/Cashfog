@@ -1241,7 +1241,7 @@ include "../includes/bundle.inc.php";
 
                                                             ?>
                                                             
-                                                              <?php                                                                  if($max_page > 5){
+                                                              <?php  if($max_page > 5){
                                                                     for($i = $current_page; $i <= ($current_page + 4); $i++){
 
                                                                               //this is to assign the class to selected page
