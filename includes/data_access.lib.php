@@ -650,8 +650,13 @@ class data_access
         $action_group_2 = $this -> action($action_2 , true , $year , "" , $account_id);   
         $action_group_3 = $this -> action($action_3 , true , $year , "" , $account_id);   
 
-        //sale , payment received , previous receivable , total receivable
-        return array($action_group_1[0] - $action_group_3[0] , $action_group_2[0] , $action_group_1[1] - $action_group_2[1] - $action_group_3[1]  , ($action_group_1[1] - $action_group_2[1] - $action_group_3[1]) + ($action_group_1[0] - $action_group_2[0] - $action_group_3[0]));
+        //sale , payment received , previous receivable , total receivable , total_debit_note_received
+        return array($action_group_1[0] - $action_group_3[0] , 
+        			 $action_group_2[0] , 
+        			 $action_group_1[1] - $action_group_2[1] - $action_group_3[1]  , 
+        			 ($action_group_1[1] - $action_group_2[1] - $action_group_3[1]) + ($action_group_1[0] - $action_group_2[0] - $action_group_3[0]) ,
+        			 $action_group_3[0]
+        			);
 
 	}
 

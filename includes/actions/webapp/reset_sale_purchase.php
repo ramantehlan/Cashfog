@@ -50,13 +50,17 @@ if(isset($_SESSION[app_name . 'session_name'])){
 				$action_area_name = ".sales_action";
 				$action_1 = "a1";
 				$action_2 = "a2";
-				$other_content = array("sales_content" , "payment_received_content" , "prerec_content" , "totrec_paid_content");
+				$action_3 = "a5";
+				// Id of div to display data
+				$other_content = array("sales_content" , "payment_received_content" , "prerec_content" , "totrec_paid_content", "debit_note_received_content");
 			}else if($_POST['request_type'] == "purchase"){
 				$chart_name = "purchase_flow";
 				$action_area_name = ".purchase_action";
 				$action_1 = "a4";
 				$action_2 = "a3";
-				$other_content = array("purchase_content" , "payment_paid_content" , "prepay_content" , "totpay_content");
+				$action_3 = "a6";
+				// Id of div to display data
+				$other_content = array("purchase_content" , "payment_paid_content" , "prepay_content" , "totpay_content", "debit_note_sent_content");
 			}else{
 				return false;
 			}
@@ -65,11 +69,13 @@ if(isset($_SESSION[app_name . 'session_name'])){
   
        	 	$action_monthly_1 = $access -> action_monthly($action_1 , $_POST['year'] , $_POST['account_id']);
         	$action_monthly_2 = $access -> action_monthly($action_2 , $_POST['year'] , $_POST['account_id']);
+        	$action_monthly_3 = $access -> action_monthly($action_3 , $_POST['year'] , $_POST['account_id']);
 
 			$action_data[0] = $decode -> money($action_data[0] , $_POST['country'] , $_POST['currency'] );
 			$action_data[1] = $decode -> money($action_data[1] , $_POST['country'] , $_POST['currency'] );
 			$action_data[2] = $decode -> money($action_data[2] , $_POST['country'] , $_POST['currency'] );
 			$action_data[3] = $decode -> money($action_data[3] , $_POST['country'] , $_POST['currency'] );
+			$action_data[4] = $decode -> money($action_data[4] , $_POST['country'] , $_POST['currency'] );
 			
 			echo "<script type='text/javascript'>
 
@@ -77,8 +83,10 @@ if(isset($_SESSION[app_name . 'session_name'])){
 				$('#" .  $other_content[1] .  "').html('" . $action_data[1] . "');
 				$('#" .  $other_content[2] .  "').html('" . $action_data[2] . "');
 				$('#" .  $other_content[3] .  "').html('" . $action_data[3] . "');
-				$chart_name.data.datasets[0].data = [" . $action_monthly_1[0] . "];
-				$chart_name.data.datasets[1].data = [" . $action_monthly_2[0] . "];
+				$('#" .  $other_content[4] .  "').html('" . $action_data[4] . "');
+				$chart_name.data.datasets[0].data = [" . $action_monthly_3[0] . "];
+				$chart_name.data.datasets[1].data = [" . $action_monthly_1[0] . "];
+				$chart_name.data.datasets[2].data = [" . $action_monthly_2[0] . "];
 				$chart_name.data.xLabels = [" . $period[5] . "];
 				$chart_name.data.labels = [" . $period[4] . "];
    			    $chart_name.update(600);
