@@ -63,7 +63,7 @@ if(isset($_POST['email_in']) && isset($_POST['password_in'])  )
 		 		header("location:" . app . "dashboard");
 		 	break;
 		 	case 'hp2':
-		 		header("location:" . profile );
+		 		header("location:" . profile .  $get['ID'] );
 		 	break;
 		 	case 'hp3':
 		 		header("location:" . app . "transactions");

@@ -87,6 +87,9 @@ include "../includes/bundle.inc.php";
         $payment_received_monthly = $access -> action_monthly("a2" , $current_financial_year);
         $payment_paid_monthly = $access -> action_monthly("a3" , $current_financial_year);
         $purchase_monthly = $access -> action_monthly("a4" , $current_financial_year);
+        $debit_note_monthly = $access -> action_monthly("a5" , $current_financial_year);
+        $credit_note_monthly = $access -> action_monthly("a6" , $current_financial_year);
+
 
 
         $years_option = "";
@@ -246,7 +249,8 @@ include "../includes/bundle.inc.php";
                                 <canvas id='sales'></canvas>
                         </div>
 
-                        <div class='details_of_cashflow'>
+                        <div class='details_of_cashflow '>
+                            
                             <div class='row_of_details'>
                                 <div class='head_of_details capital'>+ <?php echo $lang['total'] . " " . $lang['sales']; ?></div> 
                                 <div class='body_of_details' id='sales_content'><?php echo $decode -> money($sale[0] , $COUNTRY , $CURRENCY ); ?></div>
@@ -259,9 +263,14 @@ include "../includes/bundle.inc.php";
                                 <div class='head_of_details capital'>+ <?php echo $lang['previous_receivable']; ?></div> 
                                 <div class='body_of_details' id='prerec_content'><?php echo $decode -> money( $sale[2] , $COUNTRY , $CURRENCY ); ?></div>
                             </div>
+                            
                             <div class='row_of_details imp_detail'>
                                 <div class='head_of_details capital'>= <?php echo $lang['total_receivable']; ?></div> 
                                 <div class='body_of_details' id='totrec_paid_content'><?php echo $decode -> money($sale[3] , $COUNTRY , $CURRENCY ); ?></div>
+                            </div>
+                            <div class='row_of_details'>
+                                <div class='head_of_details capital'> <?php echo $lang['total'] . " " . $lang['debit_note_received']; ?></div> 
+                                <div class='body_of_details' id='debit_note_received_content'><?php echo $decode -> money($sale[4] , $COUNTRY , $CURRENCY ); ?></div>
                             </div>
                            
                         </div>
@@ -316,9 +325,14 @@ include "../includes/bundle.inc.php";
                                 <div class='head_of_details capital'>+ <?php echo $lang['previous_payable']; ?></div> 
                                 <div class='body_of_details' id='prepay_content'><?php echo $decode -> money($purchase[2] , $COUNTRY , $CURRENCY ); ?></div>
                             </div>
+                            
                             <div class='row_of_details imp_detail'>
                                 <div class='head_of_details capital'>= <?php echo $lang['total_payable']; ?></div> 
                                 <div class='body_of_details' id='totpay_content'><?php echo $decode -> money($purchase[3] , $COUNTRY , $CURRENCY ); ?></div>
+                            </div>
+                            <div class='row_of_details'>
+                                <div class='head_of_details capital'> <?php echo $lang['total'] . " " . $lang['debit_note_sent']; ?></div> 
+                                <div class='body_of_details' id='debit_note_sent_content'><?php echo $decode -> money($purchase[4] , $COUNTRY , $CURRENCY ); ?></div>
                             </div>
                             
                         </div>
@@ -827,11 +841,35 @@ var sales_flow = new Chart(ctx_3, {
     type: 'bar',
     data: {
         labels:[<?php echo $period[4] ?>],
-        datasets: [{
+        datasets: [
+         {
+            type:"line",
+            label: "<?php echo $lang['debit_note_received']; ?>",
+            data: [ <?php echo $debit_note_monthly[0]; ?>],
+            fill: false,
+            borderDash: [3, 1],
+            backgroundColor: "rgba( 230, 126, 34 ,0.3)",
+            lineTension: 0.2,
+            borderWidth:0,
+            borderColor:'#DB3B73',
+            pointRadius: 1.5,
+            pointHitRadius:3,
+            pointHoverRadius: 3,
+
+            pointBorderColor: "#A82D58",
+            pointBackgroundColor: "#A82D58",
+            pointBorderWidth: 1,
+            pointHoverBorderWidth: 2,
+
+           /* pointHoverBackgroundColor: "#B5771B",
+            pointHoverBorderColor: "#B5771B",*/
+            
+        },
+        {
             type:"line",
             label: "<?php echo $lang['sales']; ?>",
             data: [ <?php echo $sale_monthly[0]; ?>],
-            fill: true,
+            fill: false,
             backgroundColor: "rgba( 230, 126, 34 ,0.3)",
             lineTension: 0.2,
             borderWidth:0,
@@ -849,13 +887,15 @@ var sales_flow = new Chart(ctx_3, {
             pointHoverBorderColor: "#B5771B",*/
             
         },
+       
         {
             type:'bar',
             label: "<?php echo $lang['payment_received']; ?>",
             data: [ <?php echo $payment_received_monthly[0]; ?>],  
             backgroundColor: "#399CF9",
             borderWidth : 0,
-        } 
+        }
+        
         ] ,
         xLabels: [<?php echo $period[5] ?>] ,
         yLabels: [] ,
@@ -877,11 +917,35 @@ var purchase_flow = new Chart(ctx_4, {
     type: 'bar',
      data: {
         labels:[<?php echo $period[4] ?>],
-        datasets: [{
+        datasets: [
+        {
+            type:"line",
+            label: "<?php echo $lang['debit_note_sent']; ?>",
+            data: [ <?php echo $credit_note_monthly[0]; ?>],
+            fill: false,
+            borderDash: [3, 1],
+            backgroundColor: "rgba( 230, 126, 34 ,0.3)",
+            lineTension: 0.2,
+            borderWidth:0,
+            borderColor:'#C98936',
+            pointRadius: 1.5,
+            pointHitRadius:3,
+            pointHoverRadius: 3,
+
+            pointBorderColor: "#A5712C",
+            pointBackgroundColor: "#A5712C",
+            pointBorderWidth: 1,
+            pointHoverBorderWidth: 2,
+
+           /* pointHoverBackgroundColor: "#B5771B",
+            pointHoverBorderColor: "#B5771B",*/
+            
+        },
+        {
             type:"line",
             label: "<?php echo $lang['purchase']; ?>",
             data: [ <?php echo $purchase_monthly[0]; ?>],
-            fill: true,
+            fill: false,
             backgroundColor: "rgba( 230, 126, 34 ,0.3)",
             lineTension: 0.2,
             borderWidth:0,

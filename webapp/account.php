@@ -151,10 +151,7 @@ include "../includes/bundle.inc.php";
 
 
                                         //this is to set the href of back link according to the ledger type
-                                        if(isset($_SERVER['HTTP_REFERER'])){
-                                            if(current_url != $_SERVER['HTTP_REFERER']){
-                                                $back_url = $_SERVER['HTTP_REFERER'];
-                                            }else{
+                                        
                                                 switch ($account_type_code) {
                                                 case 'le1':
                                                     $back_url =  app . "transactions/b";
@@ -168,35 +165,10 @@ include "../includes/bundle.inc.php";
                                                 case 'le4':
                                                     $back_url =  app . "transactions/e";
                                                 break;
-                                           
                                                 default:
                                                    $back_url =  app . "transactions";
                                                 break;
                                             }
-                                            }
-                                            
-
-
-                                        }else{
-                                             switch ($account_type_code) {
-                                                case 'le1':
-                                                    $back_url =  app . "transactions/b";
-                                                break;
-                                                case 'le2':
-                                                    $back_url = app . "transactions/a";
-                                                break;
-                                                case 'le3':
-                                                    $back_url = app . "transactions/l";
-                                                break;
-                                                case 'le4':
-                                                    $back_url =  app . "transactions/e";
-                                                break;
-                                           
-                                                default:
-                                                   $back_url =  app . "transactions";
-                                                break;
-                                            } 
-                                      }
 
 
                                         //this is to handle empty name
@@ -811,7 +783,66 @@ include "../includes/bundle.inc.php";
                                                           <input type='hidden' id = 'hidden_transaction_comment_$list_no' value = '" . preg_replace('/\n/', '<br>', trim($comment)) . "'>
                                                           <input type='hidden' id = 'hidden_transaction_comment_edit_$list_no' value = '" . preg_replace('/\n/', '&#13;&#10;', trim($comment)) . "'>";
 
-                                                          
+                                                         
+                                                          /*if($account_type_code == 'le4'){
+                                                              $transaction_options = "<option value='t1'>" . $lang['expense'] . "</option>" .
+                                                                                      "<option value='t2'>" . $lang['income'] . "</option> ";
+                                                            }else if($account_type_code == 'le3' ){
+                                                              $transaction_options = "<option value='t1'>" . $lang['debt'] . "</option>" .
+                                                                                     "<option value='t2'>" . $lang['debt_paid'] . "</option> ";
+                                                            }else if($account_type_code == 'le2' ){
+                                                              $transaction_options = "<option value='t1'>" . $lang['value'] . "</option>" .
+                                                                                     "<option value='t2'>" . $lang['depreciation'] . "</option> ";
+                                                            }else{
+                                                              $transaction_options = "<option value='a1'>" . $lang['sales'] . "</option>" .
+                                                                                     "<option value='a4'>" . $lang['purchase'] . "</option>" .
+                                                                                      "<option value='a2'>" . $lang['payment_received'] . "</option>" .
+                                                                                      "<option value='a3'>" . $lang['payment_paid'] . "</option> ".
+                                                                                      "<option value='a5'>" . $lang['debit_note_received'] . "</option>" .
+                                                                                      "<option value='a6'>" . $lang['debit_note_sent'] . "</option> ".
+                                                                                      "<option value='a7'>" . $lang['other'] . " " . $lang['debit'] . " (" . $lang['out'] . ")" . "</option>" .
+                                                                                      "<option value='a8'>" . $lang['other'] . " " . $lang['credit'] .  " (" . $lang['in'] . ")" . "</option> ";
+                                                            } 
+                                                            */
+
+                                                            if ($account_type_code == "le1") {
+                                                                  
+                                                                  $particular_tag = "<div class='particular_tag'>";
+                                                                switch ($transaction_type_2) {
+                                                                  case 'a1':
+                                                                      $particular_tag .= $lang['sale'];
+                                                                    break;
+                                                                  case 'a2':
+                                                                      $particular_tag .= $lang['payment_received'];
+                                                                    break;
+                                                                  case 'a3':
+                                                                      $particular_tag .= $lang['payment_paid'];
+                                                                    break;
+                                                                  case 'a4':
+                                                                      $particular_tag .= $lang['purchase'];
+                                                                    break;
+                                                                  case 'a5':
+                                                                      $particular_tag .= $lang['debit_note_received'];
+                                                                    break;
+                                                                  case 'a6':
+                                                                      $particular_tag .= $lang['debit_note_sent'];
+                                                                    break;
+                                                                  case 'a7':
+                                                                      $particular_tag .= $lang['other'] . " " . $lang['debit'] . " (" . $lang['out'] . ")";
+                                                                    break;
+                                                                  case 'a8':
+                                                                      $particular_tag .= $lang['other'] . " " . $lang['credit'] .  " (" . $lang['in'] . ")";
+                                                                    break;
+                                                                  
+                                                                  default:
+                                                                      $particular_tag .= $lang['unknown'];
+                                                                    break;
+                                                                }
+                                                                $particular_tag .= "</div>";
+
+                                                            }else{
+                                                                $particular_tag = "";
+                                                            }
                                         ?>
 
                                                                      
@@ -826,7 +857,7 @@ include "../includes/bundle.inc.php";
 															<?php echo $date_of_transaction; ?>
 													  </div>
 													  <div class="table_body_item_detail overflow capital title_3 middle_title name_title" id='list_particulars_<?php echo $list_no; ?>'>
-															<?php echo ($particulars != "")? $particulars : "-"; ?>
+															 <?php echo $particular_tag; ?><?php echo ($particulars != "")? $particulars : "-"; ?>
 													  </div>
 													  <div class="table_body_item_detail overflow capital title_4 bold_title amount_title" id='list_debit_<?php echo $list_no; ?>'>
 														  	<?php  echo $debit_value; ?>
