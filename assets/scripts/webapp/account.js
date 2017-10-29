@@ -17,6 +17,7 @@ $(document).ready(function(){
  					
  					 var el = $('.table_head'); 
  					 var bo = $(".table_body");
+ 					 var back = $(".account_details_title_back");
 
  					 var isPositionFixed = (el.css('position') == 'fixed');
  			
@@ -24,10 +25,12 @@ $(document).ready(function(){
  					 if ($(this).scrollTop() > 100 && !isPositionFixed){ 
     								el.css({'position': 'fixed', 'top': '0px'}); 
     								bo.css({'marginTop':'81px'});
+    								back.addClass("back_fixed");
   					}
   					if ($(this).scrollTop() < 100 && isPositionFixed){
    					 				el.css({'position': 'static', 'top': '0px'}); 
    					 				bo.css({'marginTop':'0px'});
+   					 				back.removeClass("back_fixed");
   					} 
 			});
 

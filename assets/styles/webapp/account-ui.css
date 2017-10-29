@@ -107,6 +107,11 @@ html{background:#ffffff;}
 
 }
 
+.back_fixed{position:fixed;
+			margin-top:-30px;
+			margin-left:-120px;
+}
+
 .back_a{text-decoration:none;
 		color:#754C4E;
 }
