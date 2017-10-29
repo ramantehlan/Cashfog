@@ -1,3 +1,10 @@
+// To save it in data base
+function update(){
+  let data = $(".sortable").sortable('serialize');
+
+  alert(data);
+}
+
 $(document).ready(function(){
 // Cache selectors outside callback for performance. 
 /*function showCoords(event) {
@@ -29,4 +36,21 @@ $(window).hover(showCoords);
   					} 
   					
 			});
+
+
+
+      $( ".sortable" ).sortable({
+           placeholder: "ui-state-highlight",
+           helper: 'clone',
+           handle: ".sortable_handle",
+           update: function( event, ui ) {
+            var data = $(".sortable").sortable('serialize' , { key: "id" });
+
+            $.post( $("#record_list_link").val() , {data:data } , function(response){
+                 $("#record_list_area").html(response);
+             });
+          }
+
+    }).disableSelection();
+
 });
