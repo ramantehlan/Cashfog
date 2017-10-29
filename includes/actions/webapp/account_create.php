@@ -70,7 +70,8 @@ if(isset($_SESSION[app_name . 'session_name'])){
 													`WEBSITE`, 
 													`COMMENT`, 
 													`ACTIVITY_STATUS`, 
-													`DATE_OF_CREATION`) VALUES ('$account_id', '$user_id', '$account_type', '$contact_salutation', '$contact_f_name', '$contact_l_name', '$company_name', '$account_title', '$currency', '$due_days', '$address', '$street', '$city', '$state', $zip, '$country', '$contact_email', $work_phone, $mobile_phone, '$website', '$account_comment', '1', CURRENT_TIMESTAMP);";
+													`DATE_OF_CREATION`,
+													`LIST_RANKING`) VALUES ('$account_id', '$user_id', '$account_type', '$contact_salutation', '$contact_f_name', '$contact_l_name', '$company_name', '$account_title', '$currency', '$due_days', '$address', '$street', '$city', '$state', $zip, '$country', '$contact_email', $work_phone, $mobile_phone, '$website', '$account_comment', '1', CURRENT_TIMESTAMP, NULL);";
 
 
 			mysqli_query($connect , $code);

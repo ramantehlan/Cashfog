@@ -56,7 +56,8 @@ if(isset($_SESSION[app_name . 'session_name'])){
 													`WEBSITE`, 
 													`COMMENT`, 
 													`ACTIVITY_STATUS`, 
-													`DATE_OF_CREATION`) VALUES ('$account_id', '$user_id', '$account_type', '', '', '', '', '$account_title', '$currency', NULL, '', '', '', '', NULL , '', '', NULL , NULL , '' , '', '1', CURRENT_TIMESTAMP);";
+													`DATE_OF_CREATION`,
+													`LIST_RANKING`) VALUES ('$account_id', '$user_id', '$account_type', '', '', '', '', '$account_title', '$currency', NULL, '', '', '', '', NULL , '', '', NULL , NULL , '' , '', '1', CURRENT_TIMESTAMP, NULL);";
 
 
 			

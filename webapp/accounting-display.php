@@ -225,7 +225,8 @@ $(document).ready(function(){
 </div>
 
 
-
+	<input type='hidden' id='record_list_link' value="<?php echo action_app; ?>account_list_record.php">
+    <span id='record_list_area'></span>
 
 <div class='ledgers_container table'>
 			<div class="table_head">
@@ -258,7 +259,7 @@ $(document).ready(function(){
 							}
 					?>
 			</div>
-			<div class="table_body">
+			<div class="table_body sortable">
 									<?php 
 
 										/**************************************************************
@@ -266,7 +267,7 @@ $(document).ready(function(){
 										***************************************************************/
 
 										//code to get info
-										$account_sql_code = "SELECT * FROM `$db_name`.`$accounts_table` WHERE OWNER_ID = '$USER_ID' AND ACCOUNT_TYPE = '$account_type' order by `DATE_OF_CREATION` DESC";
+										$account_sql_code = "SELECT * FROM `$db_name`.`$accounts_table` WHERE OWNER_ID = '$USER_ID' AND ACCOUNT_TYPE = '$account_type' order by `LIST_RANKING` ASC";
 										//code to get no of ledgers
               							$no_of_accounts = mysqli_num_rows( mysqli_query($connect , $account_sql_code ) );
 
@@ -308,11 +309,20 @@ $(document).ready(function(){
 												$opening_balance = $book_data[3];
                                		?>
 
-                                    
+
+                        <div  id='id_<?php echo $account_id; ?>'>
 						 <a href='<?php echo app; ?>account/<?php echo $account_id; ?>'>
-						 <div class="table_body_item">
+						 <div class="table_body_item list_item_<?php echo $list_no; ?>">
 							<div class="table_body_item_detail overflow capital title_1">
+									<div class='sortable_handle sortable_handle_<?php echo $list_no; ?>'><img src="<?php echo image_icon; ?>move.png" title="move"></div>
 									<?php echo $list_no; ?>
+									<script type="text/javascript">
+										 $(".list_item_<?php echo $list_no; ?>").hover(function(){
+        									  $(".sortable_handle_<?php echo $list_no; ?>").show();
+     									 },function(){
+       										   $(".sortable_handle_<?php echo $list_no; ?>").hide();
+     									 });
+									</script>
 							</div>
 							<div class="table_body_item_detail  account_link overflow capital title_2 name_title">
 									<?php echo $account_title; ?>
@@ -343,6 +353,7 @@ $(document).ready(function(){
 							?>
 					 </div>
 					 </a>
+					</div>
 
 					 <?php 
 					  $list_no++;
