@@ -73,8 +73,7 @@ customize the table
 		border:0px;
 }
 
-.wide_title{width:207px;}
-.wide_title_2{width:309px;}
+
 
 .name_title{text-align:left;
 			font-family:text-title;
@@ -86,7 +85,12 @@ customize the table
 			  font-size:14px;
 }
 
-
+/*207*/
+.wide_title{width:180px;}
+.wide_account_title{width:230px;}
+/*309*/
+.wide_title_2{width:220px;}
+.wide_account_title_2{width:330px;}
 
 
 
