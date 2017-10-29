@@ -60,13 +60,16 @@ creator:- raman tehlan
 						 							
 				$show_balance = false;
 				$title_type = "wide_title_2";
+				$title_type_2 = "wide_account_title_2";
 						 							
 		}else if($account_type == "le2" || $account_type == "le3"){
 				$show_balance = true;
 				$title_type = "wide_title";
+				$title_type_2 = "wide_account_title";
 		}else{
 				$show_balance = true;
 				$title_type = "";
+				$title_type_2 = "";
 		}
 
 
@@ -233,7 +236,7 @@ $(document).ready(function(){
 					<div class="table_head_title overflow capital title_1" >
 						#
 					</div>
-					<div class="table_head_title overflow capital title_2">
+					<div class="table_head_title overflow capital title_2 <?php echo $title_type_2; ?>">
 						<?php echo $lang['account_name']; ?>
 					</div>
 					<div class="table_head_title overflow capital title_4 <?php echo $title_type; ?>">
@@ -324,7 +327,7 @@ $(document).ready(function(){
      									 });
 									</script>
 							</div>
-							<div class="table_body_item_detail  account_link overflow capital title_2 name_title">
+							<div class="table_body_item_detail  account_link overflow capital title_2 name_title <?php echo $title_type_2; ?>">
 									<?php echo $account_title; ?>
 							</div>
 							<div class="table_body_item_detail overflow capital title_4 amount_title <?php echo $title_type; ?>">
@@ -380,7 +383,7 @@ $(document).ready(function(){
 							<div class="table_body_item_detail overflow capital title_1">
 									<?php echo $list_no++; ?>
 							</div>
-							<div class="table_body_item_detail  account_link overflow capital title_2 name_title">
+							<div class="table_body_item_detail  account_link overflow capital title_2 name_title <?php echo $title_type_2; ?>">
 										Payment Received
 							</div>
 							<div class="table_body_item_detail overflow capital title_4 amount_title <?php echo $title_type; ?>">
@@ -396,7 +399,7 @@ $(document).ready(function(){
 							<div class="table_body_item_detail overflow capital title_1">
 									<?php echo $list_no++; ?>
 							</div>
-							<div class="table_body_item_detail  account_link overflow capital title_2 name_title">
+							<div class="table_body_item_detail  account_link overflow capital title_2 name_title <?php echo $title_type_2; ?>">
 										Payment Paid
 							</div>
 							<div class="table_body_item_detail overflow capital title_4 amount_title <?php echo $title_type; ?>">
@@ -411,7 +414,7 @@ $(document).ready(function(){
 							<div class="table_body_item_detail overflow capital title_1">
 									<?php echo $list_no++; ?>
 							</div>
-							<div class="table_body_item_detail  account_link overflow capital title_2 name_title">
+							<div class="table_body_item_detail  account_link overflow capital title_2 name_title <?php echo $title_type_2; ?>">
 										Debit Notes Received
 							</div>
 							<div class="table_body_item_detail overflow capital title_4 amount_title <?php echo $title_type; ?>">
