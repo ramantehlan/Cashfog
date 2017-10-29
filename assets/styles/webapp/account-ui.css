@@ -23,7 +23,7 @@ html{background:#ffffff;}
 
 .table_body{}
 
-.table_body_item:hover{background-color:#FFAD69;
+.table_body_item:hover{background-color:#125E8A;
 						color:white;
 }
 
@@ -45,6 +45,14 @@ html{background:#ffffff;}
 .title_6{width:110px;
 		border-right:0px;
 		margin-left:10px;
+}
+
+.particular_tag{font-size:10px;
+				float:left;
+				background-color:green;
+				height:10px;
+				margin-top:-13px;
+				color:#FF5EDE;
 }
 
 .name_title{text-align:left;

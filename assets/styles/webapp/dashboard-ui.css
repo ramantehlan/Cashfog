@@ -89,7 +89,7 @@
 }
 
 .details_of_cashflow{float:left;
-					 margin-top:40px;
+					 margin-top:00px;
 					 margin-left:20px;
 }
 
@@ -104,7 +104,7 @@
 				border-radius:3px;
 }
 
-.imp_detail{background-color:rgba(230,230,230,0.35);}
+.imp_detail{background-color:rgba(230,230,230,0.5);}
 
 .head_of_details{
 				 font-size:12px;
@@ -127,6 +127,8 @@
 #payment_paid_content{color:#F2C14E;}
 #sales_content{color:#ef6036;}
 #payment_received_content{color:#399CF9;}
+#debit_note_received_content{color:#DB3B73;}
+#debit_note_sent_content{color:#C98936;}
 
 
 
