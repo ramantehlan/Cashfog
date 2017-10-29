@@ -23,7 +23,7 @@ html{background:#ffffff;}
 
 .table_body{}
 
-.table_body_item:hover{background-color:#125E8A;
+.table_body_item:hover{background-color:#D36135;
 						color:white;
 }
 
@@ -47,16 +47,17 @@ html{background:#ffffff;}
 		margin-left:10px;
 }
 
-.particular_tag{font-size:10px;
+.particular_tag{font-size:11px;
 				float:left;
-				background-color:green;
 				height:10px;
 				margin-top:-13px;
-				color:#FF5EDE;
+				color:#A2B728;
 }
+
 
 .name_title{text-align:left;
 			font-family:text-medium;
+			line-height:50px;
 }
 
 .amount_title{text-align:right;}

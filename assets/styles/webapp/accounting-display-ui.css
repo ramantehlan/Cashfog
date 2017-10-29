@@ -104,6 +104,21 @@ edit table info
 						border-radius:3px;
 }
 
+.ui-state-highlight { height: 38px; line-height: 38px; }
+
+.sortable_handle{background-color:#942cae;
+				cursor: move;
+				position:absolute;
+				margin-left:-5px;
+				width:24px;
+				height:24px;
+				padding:3px;
+				margin-top:5px;
+				border-radius:30px;
+				display:none;
+
+}
+
 
 .table_head{
 			color:#53599A;
