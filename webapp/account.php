@@ -8,7 +8,8 @@ $page_name 		= "account";
 //bundle.inc is bundle of comman includes
 include "../includes/bundle.inc.php";
 
-
+//Pagination.inc is to make pagination
+include "../includes/pagination.inc.php"
 
 ?>
 <!DOCTYPE html>
@@ -1220,69 +1221,15 @@ include "../includes/bundle.inc.php";
 
                                       ?>
 
-                                      <div class='pagination_box'>
-                                                   
-                                              <a href="<?php echo $page_url . ($current_page -1) ?>"><div class='pagination_box_item pagination_button pagination_button_left'>Previous</div></a>
-                                            
-                                              
+                                      <?php
+                                          $limit = 25; //if you want to dispaly 10 records per page then you have to change here
+                                          $startpoint = ($current_page * $limit) - $limit;
+                                          $statement = "$transactions_table where `ACCOUNT_ID` = $account_id"; //you have to pass your query over here
 
-                                                         
-                                                    <div class='pagination_center'>
+                                         echo createPagination($statement,$limit,$current_page,  "$page_url");
+                                      ?>
 
-
-
-                                                          <?php 
-                                                              if($current_page != 1){
-                                                                  
-                                                                  echo "<a href='" . $page_url. "1'><div class='pagination_box_item pagination_page_no'>1</div></a>
-                                                                        <div class='pagination_box_item pagination_dots'>...</div>";
-
-                                                              }
-
-                                                            ?>
-                                                            
-                                                              <?php  if($max_page > 5){
-                                                                    for($i = $current_page; $i <= ($current_page + 4); $i++){
-
-                                                                              //this is to assign the class to selected page
-                                                                              if($i == $current_page){
-                                                                                  $selected = "pagination_selected";
-                                                                              }else{
-                                                                                  $selected ="";
-                                                                              }
-
-                                                                              if($i < $max_page){
-                                                                                 echo "<a href='" . $page_url . $i . "'><div class='pagination_box_item pagination_page_no $selected'>$i</div></a>";
-                                                                                
-                                                                              }
-
-                                                                    }
-
-                                                                }
-                                                              ?>
-
-                                                      
-
-
-                                                          <?php 
-                                                              if($current_page != $max_page){
-                                                                  
-                                                                  echo "<div class='pagination_box_item pagination_dots'>...</div>";
-                                                              }
-
-                                                              if($current_page == $max_page){
-                                                                $selected = "pagination_selected";
-                                                              }else{
-                                                                $selected = "";
-                                                              }
-                                                              echo "<a href='" . $page_url . $max_page . "'><div class='pagination_box_item pagination_page_no $selected'>$max_page</div></a>";
-
-                                                            ?>                                                          
-                                                    </div>
-
-                                                <a href="<?php echo $page_url . ($current_page + 1); ?>"><div class='pagination_box_item pagination_button pagination_button_right'>Next</div></a>
-                                            
-
+                                      
 
                                       </div>
 

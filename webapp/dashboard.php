@@ -995,7 +995,7 @@ var exin_flow = new Chart(ctx_5, {
         datasets: [{
             label: "<?php echo $lang['expense']; ?>",
             data: [<?php echo $chart_exin_data[0] ?> ],  
-            fill: true,
+            fill: false,
             backgroundColor: "rgba( 239, 96, 54 , 0.3)",
              borderWidth : 0,
             lineTension: 0.2,
@@ -1012,7 +1012,7 @@ var exin_flow = new Chart(ctx_5, {
         {
             label: "<?php echo $lang['income']; ?>",
             data: [<?php echo $chart_exin_data[1] ?> ],
-            fill: true,
+            fill: false,
             backgroundColor: "rgba(240, 56, 255 ,0.2)",
              borderWidth : 0,
             lineTension: 0.2,
