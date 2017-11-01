@@ -175,6 +175,8 @@ include "../includes/pagination.inc.php"
                                         //this is to handle empty name
                                         if($l_contact_salutation == "" && $l_contact_first_name == "" && $l_contact_last_name == ""){
                                             $l_contact_name = "-";
+                                        }else if($l_contact_salutation == ""){
+                                            $l_contact_name = $l_contact_first_name . " " . $l_contact_last_name;;
                                         }else{
                                             $l_contact_name = "<span class='capital'>" . $lang[( $decode -> salutation($l_contact_salutation) )] . "</span>. " . $l_contact_first_name . " " . $l_contact_last_name;
                                         }
