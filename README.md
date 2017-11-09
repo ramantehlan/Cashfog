@@ -7,33 +7,23 @@
 
 Cashfog is an online application to maintain business transactions. Cashfog is easy and secure and you need not to worry about its security cause only using your email and password someone can access it. Cashfog is very flexible since it allows its users to modify almost everything, you can modify its design, language, transactions, accounts and much more. 
 
-# Features
-
-**Documents maintainer:** with this users can upload their important documents to our cloud and then they can access them from anywhere on our earth, anytime.
-
-**Strong analytics tools:** which provide its users a super power to take decisions most faster and with a more clear vision. These tools are very easy to use and they are really effective.
-
-# How It Works
-
-### 1 Record Transactions
-
-Create accounts in four categories ledger, assets, liabilities and expense/income. Then record your transactions in those accounts.
-
-### 2 Analyze
-
-Analyses can be done right after creation of all the required accounts and recoding transactions. It takes just few seconds to get started with analyses.
-
-### 3 Grow
-
-You can now take decisions which are not just on your instincts but are data driven so you can now grow faster and accurately.
-
 # Requirement
 
-  empty
+ WAMP, MAMP, LAMP, XAMPP or any other server with PHP, MySQL and Apache installed is required to run this project.
 
 # Installation
 
-  empty
+**Step 1: Download the project to root directory**
+
+  - Download the project and unzip only in the root directory of your website root or localhost.
+  
+**Step 2: Import database to MySQL**
+
+  - Create a new database and then you need to import a **.sql** file to new database. that file is: `db.sql` in the root directory.
+  
+**Step 3: Configure program**
+
+  - Now you need to go to `includes/config.inc.php` in the root directory and then change MYSQL Details to your values.
 
 # Contribution
 
