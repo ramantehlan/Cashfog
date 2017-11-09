@@ -19,7 +19,7 @@ Cashfog is an online application to maintain business transactions. Cashfog is e
   
 **Step 2: Import database to MySQL**
 
-  - Create a new database and then you need to import a **.sql** file to new database. that file is: `db.sql` in the root directory.
+  - Create a new database and then you need to import a **.sql** file to new database. that file is: `assets/db.sql` in the root directory.
   
 **Step 3: Configure program**
 
