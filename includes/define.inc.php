@@ -23,7 +23,7 @@ $trial_days = 10000;
 
 #define the host of site and protocol
 $host        = $_SERVER['HTTP_HOST'];
-$protocol    = "http://";
+$protocol    = "https://";
 
 #this is to define the site name 
 define("site_url", $protocol . $host);
