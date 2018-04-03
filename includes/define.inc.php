@@ -18,7 +18,8 @@ define("online", false);
 $current_date = date('20y-m-d h:i:s');
 
 #TO SET TRIAL DAYS 
-$trial_days = 365;
+#Well practically unlimited
+$trial_days = 10000;
 
 #define the host of site and protocol
 $host        = $_SERVER['HTTP_HOST'];
