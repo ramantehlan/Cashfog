@@ -409,9 +409,9 @@ include "../includes/pagination.inc.php"
                                                                                                     "</div>".
                                                                                             "</div>".
 
-                                                                                        "<div class='pop_show_button'>ADD DETAILS</div>".
+                                                                                        "<!-- <div class='pop_show_button'>ADD DETAILS</div>".
 
-                                                                                    "<div class='pop_hidden_part'>" .
+                                                                                    "<div class='pop_hidden_part'> -->" .
                                                                                          
                                                                                           "<div class='pop_item'>".
                                                                                                     "<div class='pop_item_label overflow'>" . $lang['particulars'] . "</div>".
@@ -447,7 +447,7 @@ include "../includes/pagination.inc.php"
                                                                                                     "</div>".
                                                                                             "</div>".
 
-                                                                                        "</div>".
+                                                                                        " <!-- </div> -->".
 
                                                                                             "<input type='submit' value='" . $lang['record'] . "' class='submit_button pop_submit' id='record_transaction_button'>" .
 
