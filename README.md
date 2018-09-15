@@ -27,6 +27,10 @@ Cashfog is an online application to maintain business transactions. Cashfog is e
 
 # Contribution
 
+**Author**
+
+- [Raman Tehlan](https://ramantehlan.github.io/)
+
 Feel free to add your own features or improve any current feature, any kind of help is appreciated!
 
 # License
